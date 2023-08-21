@@ -1,10 +1,29 @@
 {
   "expo": {
     "name": "ExpoAuthTodo",
+    "author": "Serhii Sliesarev",
     "slug": "ExpoAuthTodo",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "plugins": [
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow $(PRODUCT_NAME) to use Face ID."
+        }
+      ]
+    ],
+    "experiments": {
+      "tsconfigPaths": true
+    },
+    "android": {
+      "permissions": [
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT"
+      ],
+      "package": "com.anonymous.ExpoAuthTodo"
+    }
   }
 }

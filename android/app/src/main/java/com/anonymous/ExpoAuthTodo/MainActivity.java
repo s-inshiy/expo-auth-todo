@@ -1,4 +1,4 @@
-package com.expoauthtodo;
+package com.anonymous.ExpoAuthTodo;
 
 import android.os.Build;
 import android.os.Bundle;
